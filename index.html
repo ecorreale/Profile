@@ -28,20 +28,18 @@
 
 <body>
 
-    <!-- <div class="container"> -->
-
     <!-- define NavBar collapse and color settings and mb (bottom margin -->
-    <nav class="navbar  navbar-expand-md mb-3 mr-2 fixed-top navbar-light" style="font-size:11px;" role="navigation">
+    <nav class="navbar  navbar-expand-md mb-3 mr-2 navbar-light" role="navigation">
         <!-- Start Nav list structure -->
         <!-- attributes
-            mb-2 Attribute: m = Margin, b = bottom, 2 = 8px 
+            mb-2 Attribute: m = Margin, b = bottom, 2 = 8px
         -->
 
 
         <!-- Crete Hamburger button for collapsed state -->
         <button class="navbar-toggler small mr-2 " type="button" data-toggle="collapse" data-target="#navDiv" aria-controls="navDiv" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            <!--  Opens in singe row-->
+            <!-- ISSUE - Opens in singe row-->
         </button>
 
         <!-- display static string in nav bar (brand) -->
@@ -53,7 +51,13 @@
                 <!-- navigaton item on nav bar -->
                 <li class="nav-item">
                     <!-- link when clicking on the nav item -->
-                    <a id="profile-tab" class="nav-link active" data-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false">Portfolio</a>
+                    <a id="about-tab" class="nav-link active" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
+                </li>
+
+                <!-- navigaton item on nav bar -->
+                <li class="nav-item">
+                    <!-- link when clicking on the nav item -->
+                    <a id="profile-tab" class="nav-link " data-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false">Portfolio</a>
                 </li>
 
 
@@ -64,11 +68,7 @@
                 </li>
 
 
-                <!-- navigaton item on nav bar -->
-                <li class="nav-item">
-                    <!-- link when clicking on the nav item -->
-                    <a id="about-tab" class="nav-link" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
-                </li>
+
 
             </ul>
             <!--/Nav Items-->
@@ -83,11 +83,18 @@
     <div class="tab-content">
 
         <!-- tab-pane ID must equeal the href value minius the # for the associated tab -->
-        <div class="tab-pane fade show active" id="portfolio" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+            <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src="./about.html"></iframe>
+            </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="profile-tab">
             <!-- iframe responsive wrapper -->
-            <div class="embed-responsive embed-responsive-1by1 ">
+            <div class="embed-responsive embed-responsive-1by1">
                 <!-- iframe loading profie.htm page -->
-                <iframe class="embed-responsive-item" src="./portfolio.html"></iframe>
+                <iframe id="profile-iframe" class="embed-responsive-item" src="./portfolio.html"></iframe>
             </div>
         </div>
 
@@ -99,18 +106,14 @@
             </div>
         </div>
 
-
-        <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
-            <div class="embed-responsive embed-responsive-1by1">
-                About-Tab
-                <iframe class="embed-responsive-item" src="./about.html"></iframe>
-            </div>
-        </div>
     </div>
 
     <footer class="page-footer">
         <div class="text-muted">@Copyright Ernest Correale</div>
     </footer>
+
+
+
 
 </body>
 
