@@ -1,61 +1,117 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Ernie's Web Site</title>
-        <link href="./css/style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <section>
-            <img alt="Nomad Probe Image" class="logo" src="./img/Nomad_Probe.jfif"/>
+<!doctype html>
+<html lang="en">
 
-            <h2>Non Sequitur</h2>
-            <h3>Welcome to Ernie's Musings</h3>
+<head>
+    <title>Ernest Correale</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        </section>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-        <div id="container">
+    <!-- LocLized jquery script -->
+    <script type="text/javascript" src="js\jquery-3.4.1.min.js"></script>
 
-            <section id="main-bio">
+    <!-- Load Popper.js to support Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-                <h2>Ernest Correale</h2>
-                <img height="200px" id="bio-image" src="ernie.png" width="200px"/>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                            dolore magna aliqua.
-                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                            Duis aute irure
-            </section>
+    <!-- loadBootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-            <section id="contact-info">
-                <h2>Contact Info</h2>
+</head>
 
-                <ul>
-                    <li>
-                        <span style="font-weight: bold;">Email:
-                        </span>
-                        <span>
-                            <a href="mailto:evc@myEmail.com">evc@myEmail.com</a>
-                        </span>
-                    </li>
-                    <li>
-                        <span style="font-weight: bold;">Gitghub:
-                        </span>
-                        <span>
-                            <a href="https://github.com/ecorreale">Ernest
-                                                                                                Correale</a>
-                        </span>
-                    </li>
-                    <li>
-                        <span style="font-weight: bold;">Portfolio:
-                        </span>
-                        <span>Coming Soon</span>
-                    </li>
-                </ul>
+<body>
 
-            </section>
+    <!-- <div class="container"> -->
+
+    <!-- define NavBar collapse and color settings and mb (bottom margin -->
+    <nav class="navbar  navbar-expand-md mb-3 mr-2 fixed-top navbar-light" style="font-size:11px;" role="navigation">
+        <!-- Start Nav list structure -->
+        <!-- attributes
+            mb-2 Attribute: m = Margin, b = bottom, 2 = 8px 
+        -->
+
+
+        <!-- Crete Hamburger button for collapsed state -->
+        <button class="navbar-toggler small mr-2 " type="button" data-toggle="collapse" data-target="#navDiv" aria-controls="navDiv" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <!--  Opens in singe row-->
+        </button>
+
+        <!-- display static string in nav bar (brand) -->
+        <a class="navbar-brand" href="./index.html">Ernest Correale</a>
+
+        <div class="collapse navbar-collapse" id="navDiv">
+            <ul class="nav nav-tabs ml-auto " id="navTabs" role="tablist">
+
+                <!-- navigaton item on nav bar -->
+                <li class="nav-item">
+                    <!-- link when clicking on the nav item -->
+                    <a id="profile-tab" class="nav-link active" data-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false">Portfolio</a>
+                </li>
+
+
+                <!-- navigaton item on nav bar -->
+                <li class="nav-item">
+                    <!-- link when clicking on the nav item -->
+                    <a id="contact-tab" class="nav-link" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                </li>
+
+
+                <!-- navigaton item on nav bar -->
+                <li class="nav-item">
+                    <!-- link when clicking on the nav item -->
+                    <a id="about-tab" class="nav-link" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
+                </li>
+
+            </ul>
+            <!--/Nav Items-->
+
+        </div>
+        <!--/navDiv-->
+
+    </nav>
+    <!--/.Navbar-->
+
+    <!-- tab-content starts the tab panels -->
+    <div class="tab-content">
+
+        <!-- tab-pane ID must equeal the href value minius the # for the associated tab -->
+        <div class="tab-pane fade show active" id="portfolio" role="tabpanel" aria-labelledby="profile-tab">
+            <!-- iframe responsive wrapper -->
+            <div class="embed-responsive embed-responsive-1by1 ">
+                <!-- iframe loading profie.htm page -->
+                <iframe class="embed-responsive-item" src="./portfolio.html"></iframe>
+            </div>
         </div>
 
 
-    </body>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="embed-responsive embed-responsive-1by1">
+                Contact-Tab
+                <iframe class="embed-responsive-item" src="./contact.html"></iframe>
+            </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+            <div class="embed-responsive embed-responsive-1by1">
+                About-Tab
+                <iframe class="embed-responsive-item" src="./about.html"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="text-muted">@Copyright Ernest Correale</div>
+    </footer>
+
+</body>
+
 </html>

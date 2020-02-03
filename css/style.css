@@ -1,58 +1,68 @@
-.logo {
-    width:100px;
-    height: 240px;
-    float: left;
-}
-
 body {
-    padding: 0;
-    margin: 0;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    background-image: url("..\\img\\lightgrayleather.gif");
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 20px;
+    border-bottom: 1px solid lightgray;
     font-size: 18px;
-    line-height: 150%;
-    color: #333;
-    background: #efeee7;
-  }
-
-header {
-    background-color: #333333;
+    color: #008080;
+    font-weight: bolder;
 }
 
-h1 {
-    padding: 20px 0;
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #eee;
+.page-footer {
+    background-color: lightgrey;
+    border-top: solid 4px #008080;
+    font-size: 10px;
+    color: white;
+    padding: 40px;
     text-align: center;
-  }
-
-h2 {
-    font-size:24px;
 }
 
-#container {
+.tab-content {
+    padding-top: 50px;
+}
+
+.navbar-light .navbar-brand {
+    /* background-color: #008080;
+    color: white; */
+    color: #008080;
+    font-weight: bolder;
+    padding: 2px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: transparent
+}
+
+.nav-item a {
+    color: darkgray;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.card-footer a {
+    color: white;
+    text-decoration: ;
+}
+
+.card {
+    margin: 10px;
+    border: 0px;
+}
+
+.cardContainer {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: white;
     width: 1024px;
-    margin: 0 auto;
 }
 
-#main-bio,
-#contact-info,
-#bio-image
- {
-    float:left;
-}
-
-#main-bio {
-    width:70%
-}
-
-#contact-info {
-    width:30%;
-}
-
-#bio-image {
-    width:200px;
-    height: 200px;
-    margin-right: 20px;
+.card-footer {
+    background-color: #008080;
+    color: white;
+    /* margin-bottom: 20px; */
 }
