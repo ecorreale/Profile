@@ -21,7 +21,7 @@ body {
     text-align: center;
 }
 
-iframe {
+#iframe {
     height: 100%;
     position: absolute;
 }
