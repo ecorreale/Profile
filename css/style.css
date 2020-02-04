@@ -2,11 +2,6 @@ body {
     background-image: url("..\\img\\lightgrayleather.gif");
 }
 
-
-/* iframe {
-    overflow: hidden;
-} */
-
 .header {
     padding-bottom: 9px;
     margin-bottom: 10px;
@@ -75,11 +70,6 @@ navbar-brand a:hover {
     background-color: white;
 }
 
-
-/* .cardContainer {
-    background-color: white;
-} */
-
 .card-header {
     color: #008080;
 }
@@ -87,9 +77,4 @@ navbar-brand a:hover {
 .card-footer {
     background-color: #008080;
     color: white;
-}
-
-.aboutImage {
-    float: left;
-    margin-right: 10px;
 }
