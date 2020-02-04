@@ -30,6 +30,7 @@ iframe {
     float: left;
     background-color: white;
     margin-left: 20px;
+    padding-bottom: 5px;
 }
 
 .navbar {
@@ -50,7 +51,7 @@ a:active {
     text-decoration: none;
 }
 
-navbar-brand a:hover {
+.navbar-brand a:hover {
     color: white;
 }
 
@@ -82,4 +83,13 @@ navbar-brand a:hover {
 .card-footer {
     background-color: #008080;
     color: white;
+}
+
+
+/* Modifies the field widths to fix within container size */
+
+.form-control {
+    max-width: 350px;
+    /* max-width: fit-content; */
+    margin-left: 25px;
 }
