@@ -92,8 +92,9 @@ a:active {
 
 /* Modifies the field widths to fix within container size */
 
-.form-control {
+
+/* .form-control {
     max-width: 350px;
-    /* max-width: fit-content; */
+
     margin-left: 25px;
-}
+} */
