@@ -9,7 +9,6 @@ body {
 
 .header {
     padding-bottom: 9px;
-    /* margin: 20px 20px 20px 20px; */
     margin-bottom: 10px;
     padding-top: 20px;
     border-bottom: 2px solid lightgray;
@@ -27,9 +26,16 @@ body {
     text-align: center;
 }
 
+.container {
+    float: left;
+    background-color: white;
+    margin-left: 20px;
+}
+
 .navbar {
     background-color: white;
     font-size: 12px;
+    width: 100%
 }
 
 .navbar-light .navbar-brand {
@@ -40,15 +46,20 @@ body {
     padding: 0px 8px 2px 8px;
 }
 
+a:active {
+    text-decoration: none;
+}
+
+navbar-brand a:hover {
+    color: white;
+}
+
 .nav-tabs .nav-link.active {
     background-color: transparent
 }
 
 .nav-item a {
     color: darkgray;
-}
-
-a:hover {
     text-decoration: none;
 }
 
@@ -57,34 +68,25 @@ a:hover {
 }
 
 .card {
-    /* margin: 5px; */
     border: 0px;
-    /* width: 400px; */
 }
 
 .card-body {
     background-color: white;
 }
 
-.cardContainer {
+
+/* .cardContainer {
     background-color: white;
-}
+} */
 
 .card-header {
     color: #008080;
-    margin: 0px
 }
 
 .card-footer {
     background-color: #008080;
     color: white;
-    /* margin-bottom: 20px; */
-}
-
-.aboutMeWrapper {
-    width: 600px;
-    background-color: white;
-    margin-left: 20px;
 }
 
 .aboutImage {
