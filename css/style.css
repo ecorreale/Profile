@@ -68,9 +68,13 @@ a:active {
     text-decoration: none;
 }
 
-.card-footer a {
+
+/* .card-footer a {
     color: white;
-}
+} */
+
+
+/* Remove card border outline */
 
 .card {
     border: 0px;
@@ -87,14 +91,5 @@ a:active {
 .card-footer {
     background-color: #008080;
     color: white;
+    white-space: nowrap;
 }
-
-
-/* Modifies the field widths to fix within container size */
-
-
-/* .form-control {
-    max-width: 350px;
-
-    margin-left: 25px;
-} */
