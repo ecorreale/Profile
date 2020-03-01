@@ -78,10 +78,12 @@ a:active {
 
 .card {
     border: 0px;
+    /* max-height: 250px; */
 }
 
 .card-body {
     background-color: white;
+    /* height: 200px; */
 }
 
 .card-header {
@@ -92,4 +94,14 @@ a:active {
     background-color: #008080;
     color: white;
     white-space: nowrap;
+}
+
+.card-img {
+    /* max-width: 100%; */
+    /* max-height: 100; */
+}
+
+a,
+a:hover {
+    color: white;
 }
