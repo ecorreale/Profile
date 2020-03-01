@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script type="text/javascript" src="/js/jquery-3.4.1.slim.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.4.1.slim.min.js"></script>
 </head>
 
 <body>
@@ -19,13 +19,13 @@
                 console.log("hi");
                 console.log(pos);
                 $("#pos").text(pos);
-                $("#lat").text(lat);
-                $("#lng").text(lng);
+                $("#lat").text(pos.lat);
+                $("#lng").text(pos.lng);
             });
         }
     </script>
 
-    <div>Position Coord: <span id="pos"></span> </div>
+    <!-- <div>Position Coord: <span id="pos"></span> </div> -->
     <div>Latitude: <span id="lat"></span></div>
     <div>Longitude: <span id="lng"></span></div>
 </body>
