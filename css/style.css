@@ -1,5 +1,6 @@
 body {
     background-image: url("..\\img\\lightgrayleather.gif");
+    overflow-x:hidden;
 }
 
 .header {
@@ -21,7 +22,7 @@ body {
     text-align: center;
 }
 
-#iframe {
+iframe {
     height: 100%;
     position: absolute;
 }
@@ -31,6 +32,7 @@ body {
     background-color: white;
     margin-left: 20px;
     padding-bottom: 5px;
+    /* height:100%; */
 }
 
 .navbar {
