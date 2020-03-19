@@ -22,27 +22,13 @@ body {
     text-align: center;
 }
 
+.contactForm {
+    padding-bottom: 40px;
+}
 
-/* .container { */
-
-
-/* float: left; */
-
-
-/* margin-left: 20px;
-     */
-
-
-/* margin: 25px; */
-
-
-/* padding-bottom: 5px; */
-
-
-/* height:100%; */
-
-
-/* } */
+.container {
+    max-width: 850px;
+}
 
 .row {
     margin: 10px;

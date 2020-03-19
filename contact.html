@@ -2,53 +2,79 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Me</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/style.css">
+    <!-- LocLized jquery script -->
+    <script type="text/javascript" src="js\jquery-3.4.1.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        $(document).ready(function() {
+
+            $('#NavBar').load("https://ecorreale.github.io/evc.github.io/navbar.html");
+
+        });
+    </script>
+
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-10">
-            <!-- Display Container -->
-            <div class="container" style="max-width:425px">
+    <div class="container contact">
+        <div id="NavBar"> </div>
+        <!-- <p>s</p> -->
+    </div>
 
-                <header>
-                    <div class="header">Contact Me</div>
-                </header>
 
-                <main>
-                    <form>
-                        <!-- Requestor's Name -->
-                        <div class="form-group">
-                            <label for="reqName">Name</label>
-                            <input type="text" class="form-control" id="reqName" aria-describedby="reqNameHelp">
-                        </div>
+    <div class="container contact">
+        <article class="article">
+            <div class="row">
+                <div class="col-10">
+                    <!-- Display Container -->
+                    <!-- <div class="container" style="max-width:425px"> -->
 
-                        <!-- eMail address intput -->
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
+                    <header>
+                        <div class="header">Contact Me</div>
+                    </header>
 
-                        <!-- Message Textbox -->
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea rows="8" class="form-control" id="message"></textarea>
-                        </div>
+                    <main>
+                        <form class="contactForm">
+                            <!-- Requestor's Name -->
+                            <div class="form-group">
+                                <label for="reqName">Name</label>
+                                <input type="text" class="form-control" id="reqName" aria-describedby="reqNameHelp">
+                            </div>
 
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </main>
+                            <!-- eMail address intput -->
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+
+                            <!-- Message Textbox -->
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea rows="8" class="form-control" id="message"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </main>
+                </div>
             </div>
-        </div>
-        <!-- Column DIV -->
+            <!-- Column DIV -->
+    </div>
+    </article>
     </div>
     <!-- Row DIV -->
 </body>
