@@ -1,6 +1,6 @@
 body {
     background-image: url("..\\img\\lightgrayleather.gif");
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 .header {
@@ -22,10 +22,12 @@ body {
     text-align: center;
 }
 
+
+/*
 iframe {
     height: 100%;
     position: absolute;
-}
+} */
 
 .container {
     float: left;
@@ -35,11 +37,12 @@ iframe {
     /* height:100%; */
 }
 
-.navbar {
+
+/* .navbar {
     background-color: white;
     font-size: 12px;
     width: 100%
-}
+} */
 
 .navbar-light .navbar-brand {
     background-color: #008080;
