@@ -40,18 +40,38 @@ body {
 
 .navbar {
     background-color: white;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: bold;
     /* padding-bottom: 25px; */
     /* width: 100% */
 }
 
-.navbar-light .navbar-brand {
-    background-color: #008080;
-    border-radius: 2px;
+.fa {
+    padding: 7px;
+    font-size: 30px;
+    width: 30px;
+    height:30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
     color: white;
-    font-weight: bolder;
-    /* padding: 0px 8px 2px 8px; */
-}
+  }
+
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
 
 a:active {
     text-decoration: none;
@@ -61,17 +81,19 @@ a:active {
     float: left;
 }
 
-.navbar-brand a:hover {
-    color: white;
+.navbar-brand a {
+    color: black;
+    text-decoration: none;
 }
 
-.nav-tabs .nav-link.active {
+/* .nav-tabs .nav-link.active {
     background-color: transparent
-}
+} */
 
 .nav-item a {
     color: darkgray;
     text-decoration: none;
+    margin: 10px;
 }
 
 
@@ -107,7 +129,7 @@ a:active {
     /* max-height: 100; */
 }
 
-a,
+/* a,
 a:hover {
     color: white;
-}
+} */
